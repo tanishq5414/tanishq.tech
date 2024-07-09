@@ -16,7 +16,7 @@ export const getCodingStats = async () => {
           "base64"
         )}`,
       })
-      .get("/api/v1/users/current/stats")
+      .get("/api/v1/users/current/stats/all_time")
   } catch (error) {
     console.error("Error fetching data:", error)
     return { error: "Failed fetching data" }

@@ -23,6 +23,7 @@ interface ResponseData {
 
 export default async function Dashboard() {
   const data = (await getCodingStats()) as ResponseData
+  console.log(data);
 
   if (!data || data.error) {
     return (
